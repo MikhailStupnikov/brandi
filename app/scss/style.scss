@@ -1,0 +1,17 @@
+@import 'misc/variables';
+@import 'misc/functions';
+
+
+
+/******* COMMON *******/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}

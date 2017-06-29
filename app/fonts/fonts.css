@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('Open Sans.eot');
+	src: url('Open Sans.eot?#iefix') format('embedded-opentype'),
+		 url('Open Sans.svg') format('svg'),
+		 url('Open Sans.woff2') format('woff2'),
+		 url('Open Sans.woff') format('woff'),
+		 url('Open Sans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('Open Sans Light.eot');
+	src: url('Open Sans Light.eot?#iefix') format('embedded-opentype'),
+		 url('Open Sans Light.svg') format('svg'),
+		 url('Open Sans Light.woff2') format('woff2'),
+		 url('Open Sans Light.woff') format('woff'),
+		 url('Open Sans Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('Open Sans Bold.eot');
+	src: url('Open Sans Bold.eot?#iefix') format('embedded-opentype'),
+		 url('Open Sans Bold.svg') format('svg'),
+		 url('Open Sans Bold.woff2') format('woff2'),
+		 url('Open Sans Bold.woff') format('woff'),
+		 url('Open Sans Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans Extrabold';
+	src: url('Open Sans Extrabold.eot');
+	src: url('Open Sans Extrabold.eot?#iefix') format('embedded-opentype'),
+		 url('Open Sans Extrabold.svg') format('svg'),
+		 url('Open Sans Extrabold.woff2') format('woff2'),
+		 url('Open Sans Extrabold.woff') format('woff'),
+		 url('Open Sans Extrabold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans Semibold';
+	src: url('Open Sans Semibold.eot');
+	src: url('Open Sans Semibold.eot?#iefix') format('embedded-opentype'),
+		 url('Open Sans Semibold.svg') format('svg'),
+		 url('Open Sans Semibold.woff2') format('woff2'),
+		 url('Open Sans Semibold.woff') format('woff'),
+		 url('Open Sans Semibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Pacifico Regular';
+	src: url('Pacifico Regular.eot');
+	src: url('Pacifico Regular.eot?#iefix') format('embedded-opentype'),
+		 url('Pacifico Regular.svg') format('svg'),
+		 url('Pacifico Regular.woff2') format('woff2'),
+		 url('Pacifico Regular.woff') format('woff'),
+		 url('Pacifico Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
