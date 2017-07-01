@@ -1,0 +1,12 @@
+mixin features-item(ident, title, text)
+	article(class='features-item feature-' + ident)
+		h3.features-item-title= title
+		p.features-item-text= text
+
+section.features
+	.container
+		h3.section-heading Features
+		.features-list
+			+features-item('br', 'Branding', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore')
+			+features-item('dv', 'Development', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore')
+			+features-item('cl', 'Consulting', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore')

@@ -1,0 +1,23 @@
+mixin team-person(img, name, position)
+	li.team-person
+		.person-avatar
+			img(src='img/'+img+'.jpg' alt='person-one').avatar-image
+			ul.person-social
+				li.person-social-item
+					a(href='#').person-social-link.person-tw Twitter
+				li.person-social-item
+					a(href='#').person-social-link.person-fc Facebook
+				li.person-social-item
+					a(href='#').person-social-link.person-gl Google+
+		h4.person-name= name
+		p.person-position= position
+
+section.team
+	.container
+		h3.section-heading Meet Our Team
+		p.section-descr Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+		ul.team-list
+			+team-person('person-one', 'John Filmr Doe', 'Managing Director')
+			+team-person('person-two', 'Chystine Hineu', 'Lead Designer')
+			+team-person('person-three', 'Martin Matrone', 'Lead Designer')
+			+team-person('person-four', 'Steve Flaulkin', 'Sr. UI Designer')

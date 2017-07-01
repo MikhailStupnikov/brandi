@@ -16,6 +16,14 @@
   ],
   "dependencies": {
     "normalize-css": "normalize.css#^7.0.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "bxslider-4": "bxSlider#^4.2.12"
+  },
+  "overrides": {
+    "bxslider-4": {
+      "main": [
+        "./dist/jquery.bxslider.min.js"
+      ]
+    }
   }
 }

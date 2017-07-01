@@ -1,0 +1,31 @@
+- var workMenu = ['All', 'Branding', 'Web', 'Logo Design', 'Photography'];
+
+mixin portfolio-item(title, img)
+	li.portfolio-item
+		.portfolio-preview
+			h4.preview-title= title
+			a(href='#').preview-link View More
+		img(src='img/'+img+'.jpg' alt='work').portfolio-image
+
+section.works
+	.container
+		h3.section-heading Works
+		p.section-descr Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+		nav.works-menu
+			ul.works-menu-list
+				each item in workMenu
+					li.works-menu-item
+						if item == workMenu[0]
+							a(href='#').works-menu-link.works-active= item
+						else
+							a(href='#').works-menu-link= item
+		.portfolio
+			ul.portfolio-list
+				+portfolio-item('Labore et dolore magnam', 'work-one')
+				+portfolio-item('Labore et dolore magnam', 'work-two')
+				+portfolio-item('Labore et dolore magnam', 'work-three')
+				+portfolio-item('Labore et dolore magnam', 'work-four')
+				+portfolio-item('Labore et dolore magnam', 'work-five')
+				+portfolio-item('Labore et dolore magnam', 'work-six')
+				+portfolio-item('Labore et dolore magnam', 'work-seven')
+				+portfolio-item('Labore et dolore magnam', 'work-eight')
