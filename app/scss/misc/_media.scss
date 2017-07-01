@@ -1,0 +1,337 @@
+@import 'functions';
+
+
+
+@media screen and (max-width: 1000px) {
+	.home-title {
+		margin-top: rem(400px);
+	}
+	.portfolio-item {
+		width: 50%;
+	}
+	.portfolio-preview {
+		padding-top: rem(120px);
+		background-position: center rem(50px);
+	}
+	.preview-title {
+		margin-bottom: rem(16px);
+		font-size: rem(24px);
+	}
+	.preview-link {
+		font-size: rem(16px);
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.home-title {
+		margin-top: rem(350px);
+	}
+	.home-descr {
+		font-size: rem(40px);
+	}
+	.bx-controls {
+		margin-right: rem(25px);
+	}
+	.team {
+		padding-bottom: rem(65px);
+	}
+	.team-person {
+		margin-bottom: rem(40px);
+	}
+	.team-person {
+		width: 50%;
+	}
+	.footer {
+		padding-bottom: rem(70px);
+	}
+	.footer-entry {
+		width: 50%;
+		margin-bottom: rem(40px);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		position: relative;  // Посмотреть что лучше использовать!!!
+	}
+	.section-descr {
+		padding: 0 rem(70px);
+	}
+	.header {
+		position: absolute;
+	}
+	.nav-menu-list {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: none;
+		width: 100%;
+		padding: 0 10%;
+	}
+	.nav-menu-item {
+		display: block;
+		margin-left: 0;
+		text-align: center;
+		background: rgb(12,39,40);
+		&:first-child {
+			border-top-right-radius: rem(8px);
+			border-top-left-radius: rem(8px);
+		}
+		&:last-child {
+			border-bottom-right-radius: rem(8px);
+			border-bottom-left-radius: rem(8px);	
+		}
+		&:first-child {
+			border-top-right-radius: 8px;
+		}
+		&:first-child .nav-menu-link {
+			padding-top: rem(26px);
+		}
+		&:last-child .nav-menu-link {
+			padding-bottom: rem(26px);
+		}
+	}
+	.nav-menu-link {
+		padding: rem(13px) 0;
+		font-size: rem(19px);
+	}
+	.nav-menu-trigger {
+		display: block;
+		margin: rem(30px) 0 rem(20px);
+	}
+	.mPS2id-highlight {
+		border-top: none;
+	}
+	.home-info {
+		padding: 0 rem(17px);
+	}
+	.home-title {
+		margin-top: rem(220px);
+		font-size: rem(54px);
+	}
+	.slider-item {
+		height: rem(600px);
+	}
+	.bx-controls {
+		margin-right: 0;
+		top: 90%;
+		left: 0;
+	}
+	.bx-pager {
+		display: table;
+		margin: 0 auto;
+	}
+	.bx-pager-item {
+		display: inline-block;
+		margin-top: 0;
+		margin-left: rem(10px);
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	.features {
+		padding-bottom: rem(65px);
+	}
+	.features-item {
+		display: block;
+		width: 80%;
+		margin: 0 auto rem(40px);
+	}
+	.preview-title {
+		margin-bottom: rem(8px);
+		font-size: rem(16px);
+	}
+	.preview-link {
+		font-size: rem(14px);
+	}
+	.feedback-form {
+		margin-right: 0;
+	}
+	.contact-feedback,
+	.contact-social {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contact-social-list {
+		display: table;
+		margin: 0 auto;
+	}
+	.contact-social-item {
+		display: inline-block;
+		margin-left: rem(30px);
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.portfolio-preview {
+		padding-top: rem(100px);
+		background-position: center rem(30px);
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.portfolio-preview {
+		padding-top: rem(90px);
+		background-position: center rem(20px);
+	}
+	.preview-title {
+		margin-bottom: rem(8px);
+		font-size: rem(16px);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section-descr {
+		padding: 0 rem(40px);
+	}
+	.home-descr {
+		font-size: rem(30px);
+	}
+	.home-motto {
+		font-size: rem(16px);
+	}
+	.features-item {
+		padding-top: rem(62px);
+		padding-left: 0;
+	}
+	.feature-br,
+	.feature-dv,
+	.feature-cl  {
+		background-position: left top;
+	}
+	.works .section-descr,
+	.team .section-descr,
+	.contact .section-descr {
+		margin-bottom: rem(42px);
+	}
+	.works-menu-item {
+		display: block;
+		margin-left: 0;
+		text-align: center;
+		margin-top: rem(25px);
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	.works-menu-link {
+		font-size: rem(16px);
+	}
+	.portfolio-item {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.portfolio-preview {
+		padding-top: rem(140px);
+		background-position: center rem(70px);
+	}
+	.preview-title {
+		margin-bottom: rem(16px);
+		font-size: rem(24px);
+	}
+	.preview-link {
+		font-size: rem(16px);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.section-descr {
+		padding: 0;
+	}
+	.home-title {
+		margin-top: rem(170px);
+		font-size: rem(44px);
+	}
+	.home-descr {
+		font-size: rem(24px);
+	}
+	.home-motto {
+		font-size: rem(14px);
+	}
+	.home-motto:before,
+	.home-motto:after {
+		width: rem(20px);
+	}
+	.home-motto:before {
+		left: rem(-15px);
+	}
+	.home-motto:after {
+		right: rem(-15px);
+	}
+	.slider-item {
+		height: rem(500px);
+	}
+	.portfolio-preview {
+		padding-top: rem(110px);
+		background-position: center rem(40px);
+	}
+	.preview-title {
+		margin-bottom: rem(8px);
+		font-size: rem(16px);
+	}
+	.preview-link {
+		font-size: rem(14px);
+	}
+	.team-person,
+	.footer-entry {
+		display: block;
+		width: 100%;
+	}
+	.feedback-name,
+	.feedback-email {
+		display: block;
+		width: 100%;
+	}
+	.feedback-name {
+		margin-bottom: rem(29px);
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.logo-link {
+		float: none;
+		display: block;
+		margin: rem(15px) 0 0 rem(5px);
+	}
+	.logo-tagline {
+		float: none;
+		display: block;
+		margin: 0 0 rem(9px);
+		padding: rem(2px) 0 0 rem(4px);
+		font-size: rem(11px);
+		border-left: none;
+	}
+	.home-motto {
+		font-size: rem(12px);
+	}
+	.portfolio-preview {
+		padding-top: rem(90px);
+		background-position: center rem(30px);
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.portfolio-preview {
+		padding-top: rem(70px);
+		background-position: center rem(15px);
+	}
+	.preview-title {
+		margin-bottom: rem(4px);
+		font-size: rem(14px);
+	}
+	.preview-link {
+		font-size: rem(14px);
+	}
+	.contact-feedback {
+		margin-bottom: rem(40px);
+	}
+	.contact-social-item {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+}

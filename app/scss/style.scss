@@ -81,10 +81,10 @@ a {
 
 /******* HEADER *******/
 .header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 99;
+	z-index: 999;
 	width: 100%;
 	background: rgba(12,39,40, .3);
 }
@@ -126,6 +126,15 @@ a {
 	padding: rem(33px) rem(4px) rem(23px);
 	font-size: rem(13px);
 	color: #fff;
+}
+.mPS2id-highlight {
+	border-top: 2px solid #32b0ee;
+}
+.nav-menu-trigger {
+	display: none;
+	width: 20px;
+	height: 20px;
+	background: url(../img/menu-icon.png) center center no-repeat;
 }
 
 
@@ -219,13 +228,16 @@ a {
 	min-height: 100%;
 	vertical-align: bottom;
 }
-.bx-pager {
+.bx-controls {
 	position: absolute;
 	top: 50%;
 	right: 0;
 	z-index: 99;
 	margin-right: rem(47px);
-	transform: translate(-50%);
+	transform: translate(0, -50%);
+}
+.bx-pager {
+	
 }
 .bx-pager-item {
 	font-size: 0;
@@ -629,3 +641,10 @@ a {
 	line-height: rem(23px);
 	border-left: 1px solid #177e72;
 }
+
+
+
+
+
+/******* MEDIA *******/
+@import 'misc/media';

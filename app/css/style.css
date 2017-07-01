@@ -71,10 +71,10 @@ a {
 
 /******* HEADER *******/
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 999;
   width: 100%;
   background: rgba(12, 39, 40, 0.3); }
 
@@ -109,6 +109,15 @@ a {
   padding: 2.0625rem 0.25rem 1.4375rem;
   font-size: 0.8125rem;
   color: #fff; }
+
+.mPS2id-highlight {
+  border-top: 2px solid #32b0ee; }
+
+.nav-menu-trigger {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background: url(../img/menu-icon.png) center center no-repeat; }
 
 /******* HOME *******/
 .home {
@@ -189,13 +198,13 @@ a {
   min-height: 100%;
   vertical-align: bottom; }
 
-.bx-pager {
+.bx-controls {
   position: absolute;
   top: 50%;
   right: 0;
   z-index: 99;
   margin-right: 2.9375rem;
-  transform: translate(-50%); }
+  transform: translate(0, -50%); }
 
 .bx-pager-item {
   font-size: 0;
@@ -578,3 +587,248 @@ a {
   margin: 3.375rem 0 3.25rem;
   line-height: 1.4375rem;
   border-left: 1px solid #177e72; }
+
+/******* MEDIA *******/
+@media screen and (max-width: 1000px) {
+  .home-title {
+    margin-top: 25rem; }
+  .portfolio-item {
+    width: 50%; }
+  .portfolio-preview {
+    padding-top: 7.5rem;
+    background-position: center 3.125rem; }
+  .preview-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem; }
+  .preview-link {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 900px) {
+  .home-title {
+    margin-top: 21.875rem; }
+  .home-descr {
+    font-size: 2.5rem; }
+  .bx-controls {
+    margin-right: 1.5625rem; }
+  .team {
+    padding-bottom: 4.0625rem; }
+  .team-person {
+    margin-bottom: 2.5rem; }
+  .team-person {
+    width: 50%; }
+  .footer {
+    padding-bottom: 4.375rem; }
+  .footer-entry {
+    width: 50%;
+    margin-bottom: 2.5rem; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative; }
+  .section-descr {
+    padding: 0 4.375rem; }
+  .header {
+    position: absolute; }
+  .nav-menu-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 0 10%; }
+  .nav-menu-item {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    background: #0c2728; }
+    .nav-menu-item:first-child {
+      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem; }
+    .nav-menu-item:last-child {
+      border-bottom-right-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem; }
+    .nav-menu-item:first-child {
+      border-top-right-radius: 8px; }
+    .nav-menu-item:first-child .nav-menu-link {
+      padding-top: 1.625rem; }
+    .nav-menu-item:last-child .nav-menu-link {
+      padding-bottom: 1.625rem; }
+  .nav-menu-link {
+    padding: 0.8125rem 0;
+    font-size: 1.1875rem; }
+  .nav-menu-trigger {
+    display: block;
+    margin: 1.875rem 0 1.25rem; }
+  .mPS2id-highlight {
+    border-top: none; }
+  .home-info {
+    padding: 0 1.0625rem; }
+  .home-title {
+    margin-top: 13.75rem;
+    font-size: 3.375rem; }
+  .slider-item {
+    height: 37.5rem; }
+  .bx-controls {
+    margin-right: 0;
+    top: 90%;
+    left: 0; }
+  .bx-pager {
+    display: table;
+    margin: 0 auto; }
+  .bx-pager-item {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0.625rem; }
+    .bx-pager-item:first-child {
+      margin-left: 0; }
+  .features {
+    padding-bottom: 4.0625rem; }
+  .features-item {
+    display: block;
+    width: 80%;
+    margin: 0 auto 2.5rem; }
+  .preview-title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem; }
+  .preview-link {
+    font-size: 0.875rem; }
+  .feedback-form {
+    margin-right: 0; }
+  .contact-feedback,
+  .contact-social {
+    display: block;
+    width: 100%;
+    margin: 0 auto; }
+  .contact-social-list {
+    display: table;
+    margin: 0 auto; }
+  .contact-social-item {
+    display: inline-block;
+    margin-left: 1.875rem; }
+    .contact-social-item:first-child {
+      margin-left: 0; } }
+
+@media screen and (max-width: 720px) {
+  .portfolio-preview {
+    padding-top: 6.25rem;
+    background-position: center 1.875rem; } }
+
+@media screen and (max-width: 630px) {
+  .portfolio-preview {
+    padding-top: 5.625rem;
+    background-position: center 1.25rem; }
+  .preview-title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  .section-descr {
+    padding: 0 2.5rem; }
+  .home-descr {
+    font-size: 1.875rem; }
+  .home-motto {
+    font-size: 1rem; }
+  .features-item {
+    padding-top: 3.875rem;
+    padding-left: 0; }
+  .feature-br,
+  .feature-dv,
+  .feature-cl {
+    background-position: left top; }
+  .works .section-descr,
+  .team .section-descr,
+  .contact .section-descr {
+    margin-bottom: 2.625rem; }
+  .works-menu-item {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1.5625rem; }
+    .works-menu-item:first-child {
+      margin-top: 0; }
+  .works-menu-link {
+    font-size: 1rem; }
+  .portfolio-item {
+    display: block;
+    width: 90%;
+    margin: 0 auto; }
+  .portfolio-preview {
+    padding-top: 8.75rem;
+    background-position: center 4.375rem; }
+  .preview-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem; }
+  .preview-link {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 480px) {
+  .section-descr {
+    padding: 0; }
+  .home-title {
+    margin-top: 10.625rem;
+    font-size: 2.75rem; }
+  .home-descr {
+    font-size: 1.5rem; }
+  .home-motto {
+    font-size: 0.875rem; }
+  .home-motto:before,
+  .home-motto:after {
+    width: 1.25rem; }
+  .home-motto:before {
+    left: -0.9375rem; }
+  .home-motto:after {
+    right: -0.9375rem; }
+  .slider-item {
+    height: 31.25rem; }
+  .portfolio-preview {
+    padding-top: 6.875rem;
+    background-position: center 2.5rem; }
+  .preview-title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem; }
+  .preview-link {
+    font-size: 0.875rem; }
+  .team-person,
+  .footer-entry {
+    display: block;
+    width: 100%; }
+  .feedback-name,
+  .feedback-email {
+    display: block;
+    width: 100%; }
+  .feedback-name {
+    margin-bottom: 1.8125rem; } }
+
+@media screen and (max-width: 390px) {
+  .logo-link {
+    float: none;
+    display: block;
+    margin: 0.9375rem 0 0 0.3125rem; }
+  .logo-tagline {
+    float: none;
+    display: block;
+    margin: 0 0 0.5625rem;
+    padding: 0.125rem 0 0 0.25rem;
+    font-size: 0.6875rem;
+    border-left: none; }
+  .home-motto {
+    font-size: 0.75rem; }
+  .portfolio-preview {
+    padding-top: 5.625rem;
+    background-position: center 1.875rem; } }
+
+@media screen and (max-width: 320px) {
+  .portfolio-preview {
+    padding-top: 4.375rem;
+    background-position: center 0.9375rem; }
+  .preview-title {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem; }
+  .preview-link {
+    font-size: 0.875rem; }
+  .contact-feedback {
+    margin-bottom: 2.5rem; }
+  .contact-social-item {
+    display: block;
+    width: 100%;
+    margin-left: 0; } }

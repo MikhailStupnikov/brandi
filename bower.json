@@ -17,7 +17,8 @@
   "dependencies": {
     "normalize-css": "normalize.css#^7.0.0",
     "jquery": "^3.2.1",
-    "bxslider-4": "bxSlider#^4.2.12"
+    "bxslider-4": "bxSlider#^4.2.12",
+    "page-scroll-to-id": "^1.5.8"
   },
   "overrides": {
     "bxslider-4": {
