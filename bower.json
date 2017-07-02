@@ -20,7 +20,8 @@
     "bxslider-4": "bxSlider#^4.2.12",
     "page-scroll-to-id": "^1.5.8",
     "bPopup": "bpopup#^0.11.0",
-    "jquery-validation": "^1.16.0"
+    "jquery-validation": "^1.16.0",
+    "placeholders": "^4.0.1"
   },
   "overrides": {
     "bxslider-4": {
