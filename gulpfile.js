@@ -3,6 +3,12 @@ var gulp = require('gulp'),
 	pug = require('gulp-pug'),
 	prettify = require('gulp-html-prettify'),
 	sass = require('gulp-sass'),
+	del = require('del'),
+	useref = require('gulp-useref'),
+	gulpif = require('gulp-if'),
+	uglify = require('gulp-uglify'),
+	minifyCss = require('gulp-minify-css'),
+	imagemin = require('gulp-imagemin'),
 	browserSync = require('browser-sync');
 
 gulp.task('pug', function() {
@@ -45,3 +51,49 @@ gulp.task('reload', ['server'], function() {
 		'app/js/*.js'
 	]).on('change', browserSync.reload);
 });
+
+
+
+// ========== СБОРКА ==========
+gulp.task('useref', function() {
+	gulp.src('app/*.html')
+		.pipe(useref())
+		.pipe(gulpif('*.js', uglify()))
+		.pipe(gulpif('*.css', minifyCss()))
+		.pipe(gulp.dest('dist/'));
+});
+
+gulp.task('php', function() {
+	gulp.src('app/php/*')
+		.pipe(gulp.dest('dist/php'));
+});
+
+gulp.task('js', function() {
+	gulp.src('app/js/main.js')
+		.pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('fonts', function() {
+	gulp.src(['app/fonts/*', '!app/fonts/*.css'])
+		.pipe(gulp.dest('dist/fonts/'));
+});
+
+gulp.task('svg', function() {
+	gulp.src('app/img/icons/*')
+		.pipe(gulp.dest('dist/img/icons/'));
+});
+
+gulp.task('images', function() {
+	gulp.src('app/img/*')
+		.pipe(imagemin({
+			interlaced: true,
+			progressive: true
+		}))
+		.pipe(gulp.dest('dist/img/'));
+})
+
+gulp.task('clean', function() {
+	del.sync('dist/');
+});
+
+gulp.task('build', ['clean', 'useref', 'js', 'php', 'fonts', 'svg', 'images']);

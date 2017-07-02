@@ -821,11 +821,11 @@ label.feedback-error {
   .footer-entry {
     display: block;
     width: 100%; }
-  .feedback-name,
-  .feedback-email {
+  .feedback-wrap-name,
+  .feedback-wrap-email {
     display: block;
     width: 100%; }
-  .feedback-name {
+  .feedback-wrap-name {
     margin-bottom: 1.8125rem; } }
 
 @media screen and (max-width: 390px) {
@@ -847,6 +847,8 @@ label.feedback-error {
     background-position: center 1.875rem; } }
 
 @media screen and (max-width: 320px) {
+  .home-motto {
+    margin-bottom: 2.5rem; }
   .portfolio-preview {
     padding-top: 4.375rem;
     background-position: center 0.9375rem; }

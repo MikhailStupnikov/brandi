@@ -281,12 +281,12 @@
 		display: block;
 		width: 100%;
 	}
-	.feedback-name,
-	.feedback-email {
+	.feedback-wrap-name,
+	.feedback-wrap-email {
 		display: block;
 		width: 100%;
 	}
-	.feedback-name {
+	.feedback-wrap-name {
 		margin-bottom: rem(29px);
 	}
 }
@@ -315,6 +315,9 @@
 }
 
 @media screen and (max-width: 320px) {
+	.home-motto {
+		margin-bottom: rem(40px);
+	}
 	.portfolio-preview {
 		padding-top: rem(70px);
 		background-position: center rem(15px);

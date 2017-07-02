@@ -5,10 +5,16 @@ html(lang='en')
 		meta(http-equiv='X-UA-Compatible' content='IE=edge')
 		meta(name='viewport' content='width=device-width, initial-scale=1')
 		title Brandi
+		// build:css css/vendor.min.css
 		// bower:css
 		// endbower
+		// endbuild
+		// build:css fonts/fonts.min.css
 		link(rel='stylesheet' href='fonts/fonts.css')
+		// endbuild
+		// build:css css/style.min.css
 		link(rel='stylesheet' href='css/style.css')
+		// endbuild
 	body
 		<!--[if lt IE 9]>
 		p.browsehappy Your browser has become outdated, please 
@@ -31,7 +37,11 @@ html(lang='en')
 		include includes/_popup
 
 		include includes/_footer
-
+		
+		// build:js js/vendor.min.js
 		// bower:js
 		// endbower
+		// endbuild
+		// build:js js/main.min.js
 		script(src='js/main.js')
+		// endbuild
