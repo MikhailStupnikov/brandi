@@ -18,7 +18,9 @@
     "normalize-css": "normalize.css#^7.0.0",
     "jquery": "^3.2.1",
     "bxslider-4": "bxSlider#^4.2.12",
-    "page-scroll-to-id": "^1.5.8"
+    "page-scroll-to-id": "^1.5.8",
+    "bPopup": "bpopup#^0.11.0",
+    "jquery-validation": "^1.16.0"
   },
   "overrides": {
     "bxslider-4": {

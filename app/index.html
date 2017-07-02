@@ -283,12 +283,18 @@
 			<div class="contact-species">
 				<article class="contact-feedback">
 					<h4 class="feedback-title">Say hello!</h4>
-					<form class="feedback-form clearfix">
-						<div class="feedback-wrap clearfix">
-							<input class="feedback-name" type="text" name="name" placeholder="Name">
-							<input class="feedback-email" type="text" name="email" placeholder="Email">
+					<form class="feedback-form clearfix" id="feedback-send">
+						<div class="feedback-wrap-input clearfix">
+							<div class="feedback-wrap-name">
+								<input class="feedback-name" type="text" name="name" placeholder="Name">
+							</div>
+							<div class="feedback-wrap-email">
+								<input class="feedback-email" type="text" name="email" placeholder="Email">
+							</div>
 						</div>
-						<textarea class="feedback-message" name="message" placeholder="Message"></textarea>
+						<div class="feedback-wrap-textarea">
+							<textarea class="feedback-message" rows="1" name="message" placeholder="Message" maxlength="1000"></textarea>
+						</div>
 						<input class="feedback-btn" type="submit" value="Send message">
 					</form>
 				</article>
@@ -309,6 +315,9 @@
 			</div>
 		</div>
 	</section>
+	<div class="popup">
+		<p class="popup-msg"></p><span class="b-close"></span>
+	</div>
 	<footer class="footer">
 		<div class="container">
 			<div class="entry-list">
@@ -355,6 +364,8 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/bxslider-4/dist/jquery.bxslider.min.js"></script>
 	<script src="bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="bower/jquery-validation/dist/jquery.validate.js"></script>
 	<!-- endbower-->
 	<script src="js/main.js"></script>
 </body>

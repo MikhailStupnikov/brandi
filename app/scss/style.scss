@@ -475,18 +475,18 @@ a {
 .feedback-form {
 	margin-right: rem(26px);
 }
-.feedback-wrap {
+.feedback-wrap-input {
 	margin-bottom: rem(29px);
 }
-.feedback-name,
-.feedback-email {
+.feedback-wrap-name,
+.feedback-wrap-email {
 	width: 48%;
 }
-.feedback-name {
+.feedback-wrap-name {
 	float: left;
 	margin-right: rem(10px);
 }
-.feedback-email {
+.feedback-wrap-email {
 	float: right;
 }
 ::-webkit-input-placeholder {color:#b8bbbf;}
@@ -496,6 +496,7 @@ a {
 .feedback-name,
 .feedback-email,
 .feedback-message {
+	width: 100%;
 	padding: rem(17px) 0;
 	font-size: rem(17px);
 	color: #b8bbbf;
@@ -504,10 +505,11 @@ a {
 	border-radius: 0px;
 	border-bottom: 1px solid #ccc;
 }
-.feedback-message {
-	width: 100%;
-	height: rem(120px);
+.feedback-wrap-textarea {
 	margin-bottom: rem(27px);
+}
+.feedback-message {
+	height: rem(120px);
 	resize: none;
 	overflow: hidden;
 }
@@ -518,6 +520,13 @@ a {
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
+.feedback-preloader {
+	background: #fff url('../img/icons/reload.svg') left center no-repeat;
+}
+label.feedback-error {
+	font-size: rem(11px);
+	color: #d63333;
 }
 .contact-social-item {
 	margin-top: rem(19px);
@@ -547,6 +556,31 @@ a {
 }
 .contact-social-gl {
 	background-position: -147px -4px;
+}
+
+
+
+
+
+/******* POPUP *******/
+.popup {
+	display: none;
+	background: $section-bg;
+	border-radius: rem(8px);
+}
+.popup-msg {
+	padding: rem(40px);
+	text-align: center;
+}
+.b-close {
+	position: absolute;
+	top: rem(7px);
+	right: rem(7px);
+	display: block;
+	width: rem(20px);
+	height: rem(20px);
+	background: url(../img/close-icon.png) center center no-repeat;
+	cursor: pointer;
 }
 
 

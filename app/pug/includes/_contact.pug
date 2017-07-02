@@ -5,11 +5,14 @@ section#contact.contact
 		.contact-species
 			article.contact-feedback
 				h4.feedback-title Say hello!
-				form.feedback-form.clearfix
-					.feedback-wrap.clearfix
-						input(type='text' name="name" placeholder='Name').feedback-name
-						input(type='text' name="email" placeholder='Email').feedback-email
-					textarea(name="message" placeholder='Message').feedback-message
+				form#feedback-send.feedback-form.clearfix
+					.feedback-wrap-input.clearfix
+						.feedback-wrap-name
+							input(type='text' name="name" placeholder='Name').feedback-name
+						.feedback-wrap-email
+							input(type='text' name="email" placeholder='Email').feedback-email
+					.feedback-wrap-textarea
+						textarea(rows='1' name="message" placeholder='Message' maxlength='1000').feedback-message
 					input(type='submit' value='Send message').feedback-btn
 			article.contact-social
 				ul.contact-social-list

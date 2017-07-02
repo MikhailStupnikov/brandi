@@ -74,9 +74,96 @@ var AdaptiveMenu = (function() {
 
 
 
+// ======= МОДУЛЬ ОБРАТНОЙ СВЯЗИ =======
+var Feedback = (function() {
+
+	var _form = $('.feedback-form'),
+		_btn = $('.feedback-btn'),
+		_popup = $('.popup'),
+		_popupText = $('.popup-msg');
+
+	function init() {
+		_formValidate();
+	}
+
+	function _popupInit() {
+		_popup.bPopup({
+			transition: 'slideDown',
+			speed: 600
+		});
+	}
+
+	function _formSend() {
+		var dataForm = _form.serialize();
+
+		_btn.addClass('feedback-preloader');
+
+		$.ajax({
+			url: 'php/action.php',
+			method: 'POST',
+			data: dataForm,
+			success: function(data) {
+				_btn.removeClass('feedback-preloader');
+				_popupText.html(data || 'Message send');
+				_popupInit();
+				_form[0].reset();
+			},
+			error: function() {
+				_btn.removeClass('feedback-preloader');
+				_popupText.html('Error sending.');
+				_popupInit();
+			}
+		});
+	}
+
+	function _formValidate() {
+		_form.validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true,
+					minlength: 5
+				},
+				message: {
+					required: true,
+					minlength: 2
+				}
+			},
+			messages: {
+				name: {
+					required: 'Field Name is required'
+				},
+				email: {
+					required: 'Field Email is required'
+				},
+				message: {
+					required: 'Field Message is required'
+				}
+			},
+			errorClass: 'feedback-error',
+			submitHandler: function() {
+				_formSend();
+			}
+		});
+	}
+
+	return {
+		init: init
+	}
+
+})();
+
+
+
 $(document).ready(function() {
 
 	AdaptiveMenu.init();
+
+	Feedback.init();
 
 	$('.slider-list').bxSlider({
 		mode: 'fade',
